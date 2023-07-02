@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>Welcome to RECRUITMENT HUB</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid white;
+      }
+      .nav-toggle {
+        display: none;
+      }
+
+      .nav-toggle:checked + .nav-menu {
+        display: block;
+      }
+
+      .nav-menu {
+        display: none;
+      }
+
+      @media (min-width: 768px) {
+        .nav-menu {
+          display: block;
+        }
+      }
+      td {
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-[#8B5CF6] to-pink-500 scroll-smooth scroll">
+    <!-- nav bar  -->
+
+    <div class="lg:backdrop-blur-md">
+      <div
+        class="flex justify-center lg:justify-start lg:ml-5 md:justify-start md:ml-5 cursor-pointer"
+      >
+       <a href="#home"> <img src="./assets/RECRUITMENT HUB.png" class="absolute w-24 lg:w-20 cursor-pointer" alt="" /></a>
+      </div>
+
+      <div class="mt-5">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="block cursor-pointer p-4 md:hidden">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </label>
+        <nav
+          class="nav-menu absolute top-0 backdrop-blur-md w-full lg:block lg:backdrop-blur-none md:backdrop-blur-none"
+        >
+          <ul
+            class="flex flex-col items-center justify-center md:flex-row text-white mt-3 lg:justify-end lg:gap-3 md:justify-end md:gap-3"
+          >
+            <li class="py-2 md:py-0">
+              <a href="#" class="block px-4 py-2">Home</a>
+            </li>
+            <hr />
+            <li class="py-2 md:py-0">
+              <a href="#services" class="block px-4 py-2">Services</a>
+            </li>
+            <hr />
+            <li class="py-2 md:py-0">
+              <a href="#about" class="block px-4 py-2">About</a>
+            </li>
+            <hr />
+            <li class="py-2 md:py-0">
+              <a href="#contact" class="block px-4 py-2">Contact</a>
+            </li>
+            <li class="py-2 md:py-0">
+              <a href="index.html" class="block px-4 py-2"><button class="bg-white text-black m-auto w-auto h-8 rounded-md box-border px-3 py-1 hover:bg-transparent hover:text-white hover:outline outline-white" >Logout</button></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- landing page -->
+
+    <div class="my-32 rounded-lg ">
+      <div class="flex justify-center lg:justify-start lg:hidden">
+        <img src="./assets/RECRUITMENT HUB logo.png" class="w-44 lg:w-64" alt="" />
+      </div>
+      <div class="flex flex-col gap-5 mt-10 lg:justify-start lg:m-20">
+        <h1 class="text-white text-4xl lg:text-8xl font-bold text-center m-auto">
+          Welcome to <br />Recuritment Hub
+        </h1>
+        <h4 class="text-white text-base font-semibold m-auto lg:text-4xl">
+          Here we provide best candidate to do your job.
+        </h4>
+        <p class="text-white text-sm text-center m-7 lg:text-xl">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+          praesentium rem commodi velit assumenda officia, nesciunt, vero, porro
+          possimus ab labore pariatur ipsa! Ipsum incidunt ab, dolor a, natus
+          voluptatum, neque nulla illum nam officia voluptates.
+        </p>
+      </div>
+      <div class="flex justify-center mb-10">
+        <button
+          class="bg-white text-black m-auto w-auto h-8 rounded-md box-border px-3 py-1 hover:bg-transparent hover:text-white hover:outline outline-white"
+        ><a href="#services"> Get Started</a>
+         
+        </button>
+      </div>
+    </div>
+
+    <!-- services -->
+
+    <div class="mt-20  hover:shadow-lg rounded-md  " id="services">
+      <div>
+        <h1 class="text-4xl font-bold text-white mb-8 text-center lg:text-5xl">Services</h1>
+      </div>
+      <div>
+        <h2 class="text-lg font-semibold text-white my-8 text-center">
+          Find suitable candidate for the job
+        </h2>
+
+        <div class="flex justify-center">
+          <input
+            type="text"
+            placeholder="Search"
+            id="search"
+            
+            class="w-2/3 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500"
+          />
+        </div>
+
+        <div class="bg-transparent  rounded-lg flex justify-center my-5 h-full py-14  ">
+          <table class="w-3/4  lg:w-1/2 mt-5" id="dataTable">
+            <thead>
+                <tr>
+                    <th class="text-white text-2xl font-bold p-2">Name</th>
+                    <th class="text-white text-2xl font-bold p-2">Role</th>
+                </tr>
+            </thead>
+         <tr>
+
+         </tr>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- about page -->
+    <div class="flex flex-col justify-center items-center h-screen hover:shadow-lg  rounded-md"  id="about">
+      <h1 class="text-4xl font-bold text-white mb-8 lg:text-5xl">About Us</h1>
+
+      <div class="bg-transparent rounded-lg p-8 lg:w-2/3 ">
+        <p class="text-white mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          tristique lacus et urna sagittis dignissim. Nunc dignissim tincidunt
+          facilisis. Sed semper est non lacus dignissim, sit amet pharetra justo
+          aliquam. Cras vitae elit ut mauris sollicitudin auctor. Donec
+          ultricies nisi nec elit interdum tincidunt. Sed malesuada a ex nec
+          gravida. Aenean eu finibus massa. Etiam ultrices sollicitudin
+          eleifend.
+        </p>
+        <p class="text-white">
+          Donec non odio vitae nunc pretium ultrices. In non lobortis odio.
+          Etiam sed ligula cursus, pulvinar urna ut, rutrum purus. Fusce
+          tincidunt felis justo, id efficitur justo rutrum vitae. Quisque vel
+          mauris non metus tristique eleifend. Duis hendrerit feugiat sapien, ut
+          iaculis dui finibus in. Praesent scelerisque lectus nisl, eu pulvinar
+          tellus scelerisque eu. Curabitur ultrices purus vitae neque
+          pellentesque, vel dapibus dolor placerat. Vestibulum a sapien id ipsum
+          semper rhoncus.
+        </p>
+      </div>
+    </div>
+
+    <!-- contact page  -->
+    <div
+      class="flex flex-col justify-center items-center h-screen rounded-md  hover:shadow-lg"
+      id="contact"
+    >
+      <h1 class="text-4xl font-bold text-white mb-8 lg:text-5xl">Contact Us</h1>
+      <div class="bg-transparent rounded-lg p-8 lg:w-1/3 shadow-lg">
+        <form>
+          <div class="mb-4">
+            <label for="name" class="block text-white font-semibold mb-2"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-white font-semibold mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-white font-semibold mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Enter your message"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-white text-black m-auto w-auto h-8 rounded-md box-border px-3 py-1 hover:bg-transparent hover:text-white hover:outline outline-white"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // hamburger
+      const navToggle = document.getElementById("nav-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+
+      navToggle.addEventListener("change", function () {
+        navMenu.style.display = this.checked ? "block" : "none";
+      });
+
+      const handleResize =()=>{
+
+          if (window.matchMedia('(min-width: 678px)').matches) {
+              
+              document.addEventListener("click", function (event) {
+                  const targetElement = event.target;
+                  if (
+          !targetElement.closest(".nav-menu") &&
+          !targetElement.closest(".nav-toggle")
+          ) {
+              navToggle.checked = false;
+              navMenu.style.display = "none";
+            }
+        });
+    }
+}
+     window.addEventListener('resize', handleResize);
+
+      //   fetching candidate
+
+      
+      const dataTable = document.getElementById("dataTable");
+
+   
+
+
+    const searchInput = document.getElementById('search');
+  
+    let data = [];
+
+    
+    fetch('candidate.json')
+      .then(response => response.json())
+      .then(jsonData => {
+        data = jsonData;
+        console.log(data)
+        renderTable(data);
+      })
+      .catch(error => console.error(error));
+
+      
+      
+      function renderTable(data) {
+          const searchTerm = searchInput.value.trim().toLowerCase();
+          console.log(searchTerm)
+          const filteredData = data.candidates.filter(item =>
+          item.name.toLowerCase().includes(searchTerm) ||
+          item.specialty.toLowerCase().includes(searchTerm)
+          );
+          
+          dataTable.querySelector("tbody").innerHTML=''
+      
+    console.log(filteredData)
+
+     
+      filteredData.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${item.name}</td>
+          <td>${item.specialty}</td>
+        `;
+        dataTable.querySelector('tbody').appendChild(row);
+      });
+    }
+
+ 
+    searchInput.addEventListener('keyup', () => {
+        console.log(searchInput.value)
+      renderTable(data);
+    });
+
+
+    
+    </script>
+  </body>
+</html>

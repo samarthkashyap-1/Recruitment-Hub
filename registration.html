@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>Registration</title>
+</head>
+<body>
+  
+    
+  <!-- sign up page -->
+    <div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-[#8B5CF6] to-pink-500 ">
+    <div class="max-w-lg w-10/12 px-6 py-8 shadow-md rounded-2xl bg-white  lg:mt-10">
+        <p id="message" class="absolute text-md text-white ease-in-out duration-500 lg:top-14 top-48" ></p>
+      <h1 class="text-2xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">Sign Up</h1>
+      <form id="registration-form">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Username</label>
+          <input type="text" id="username" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-purple-500" placeholder="Enter your name">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+          <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-purple-500" placeholder="Enter your email">
+        </div>
+        <div class="mb-6">
+          <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+          <input type="password" id="password" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-purple-500" minlength="8" placeholder="Enter your password">
+        </div>
+        <div class="mb-6">
+          <label for="confirmpassword" class="block text-gray-700 text-sm font-bold mb-2">Confirm Password</label>
+          <input type="password" id="repassword" class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-purple-500" minlength="8" placeholder="Re-Enter your password">
+        </div>
+        <div class="flex mb-3">
+            <input type="checkbox" name="box" id="box" class=" px-3 py-2 w-3 mb-2 border border-gray-300 rounded focus:outline-none focus:border-purple-500" minlength="8" placeholder="Re-Enter your password">
+            <label for="box" class="block text-gray-700 text-sm ml-3 font-bold mb-2">I accept the <span class="text-blue-500">Terms & conditions</span> </label>
+        </div>
+        <button type="submit" class="w-full bg-gradient-to-r from-[#8B5CF6] to-pink-500 text-white font-bold py-2 px-4 rounded ">Sign Up</button>
+      </form>
+      <p class="text-sm text-gray-700 mt-4">Already have an account? <a href="index.html" class=" text-transparent bg-clip-text bg-gradient-to-r from-[#8B5CF6] to-pink-500">Log in</a></p>
+    </div>
+  </div>
+
+  <script>
+
+    const check = document.getElementById("registration-form")
+
+    check.addEventListener("submit",(e)=>{
+     e.preventDefault();
+        const user = document.getElementById("username").value
+        const email = document.getElementById("email").value
+        const pass = document.getElementById("password").value
+        const repass = document.getElementById("repassword").value
+
+        if(user ===""){
+
+             const msg = document.getElementById("message")
+    msg.textContent="Please fill the form"
+    setTimeout(() => {
+
+      msg.textContent=""
+      
+    }, 3000);
+        }
+       else if(email ===""){
+
+             const msg = document.getElementById("message")
+    msg.textContent="Email can't be empty"
+    setTimeout(() => {
+
+      msg.textContent=""
+      
+    }, 3000);
+        }
+       else if(pass ===""){
+
+             const msg = document.getElementById("message")
+    msg.textContent="Password can't be empty"
+    setTimeout(() => {
+
+      msg.textContent=""
+      
+    }, 3000);
+        }
+       else if(repass ===""){
+
+             const msg = document.getElementById("message")
+    msg.textContent="Please confirm your password"
+    setTimeout(() => {
+
+      msg.textContent=""
+      
+    }, 3000);
+        }
+       else if(!box.checked){
+
+             const msg = document.getElementById("message")
+    msg.textContent="Check the terms & conditions"
+    setTimeout(() => {
+
+      msg.textContent=""
+      
+    }, 3000);
+        }
+        else{
+            window.location.href= "landing.html"
+        }
+
+    
+
+    })
+
+  </script>
+
+
+</body>
+</html>

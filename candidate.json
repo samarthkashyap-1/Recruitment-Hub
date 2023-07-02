@@ -1,0 +1,132 @@
+{
+  "candidates": [
+    {
+      "name": "Samarth Kashyap",
+      "specialty": "Web Developer"
+    },
+    {
+      "name": "John Smith",
+      "specialty": "Software Engineering"
+    },
+    {
+      "name": "Emily Johnson",
+      "specialty": "Data Science"
+    },
+    {
+      "name": "Michael Davis",
+      "specialty": "Product Management"
+    },
+    {
+      "name": "Sarah Wilson",
+      "specialty": "UI/UX Design"
+    },
+    {
+      "name": "David Brown",
+      "specialty": "Software Engineering"
+    },
+    {
+      "name": "Jessica Taylor",
+      "specialty": "Data Science"
+    },
+    {
+      "name": "Matthew Clark",
+      "specialty": "Product Management"
+    },
+    {
+      "name": "Olivia Lee",
+      "specialty": "UI/UX Design"
+    },
+    {
+      "name": "Andrew Johnson",
+      "specialty": "Software Engineering"
+    },
+    {
+      "name": "Emma Wilson",
+      "specialty": "Data Science"
+    },
+    {
+      "name": "William Davis",
+      "specialty": "Product Management"
+    },
+    {
+      "name": "Ava Taylor",
+      "specialty": "UI/UX Design"
+    },
+    {
+      "name": "James Brown",
+      "specialty": "Software Engineering"
+    },
+    {
+      "name": "Sophia Clark",
+      "specialty": "Data Science"
+    },
+    {
+      "name": "Benjamin Lee",
+      "specialty": "Product Management"
+    },
+    {
+      "name": "Mia Johnson",
+      "specialty": "UI/UX Design"
+    },
+    {
+      "name": "Logan Wilson",
+      "specialty": "Software Engineering"
+    },
+    {
+      "name": "Charlotte Davis",
+      "specialty": "Data Science"
+    },
+    {
+      "name": "Daniel Taylor",
+      "specialty": "Product Management"
+    },
+    {
+      "name": "Amelia Brown",
+      "specialty": "UI/UX Design"
+    },
+    {
+      "name": "Liam Clark",
+      "specialty": "Software Engineering"
+    },
+    {
+      "name": "Harper Lee",
+      "specialty": "Data Science"
+    },
+    {
+      "name": "Jackson Johnson",
+      "specialty": "Product Management"
+    },
+    {
+      "name": "Ella Davis",
+      "specialty": "UI/UX Design"
+    },
+    {
+      "name": "Sebastian Taylor",
+      "specialty": "Software Engineering"
+    },
+    {
+      "name": "Avery Wilson",
+      "specialty": "Data Science"
+    },
+    {
+      "name": "Lucas Brown",
+      "specialty": "Product Management"
+    },
+    {
+      "name": "Scarlett Lee",
+      "specialty": "UI/UX Design"
+    },
+    {
+      "name": "Carter Clark",
+      "specialty": "Software Engineering"
+    },
+    {
+      "name": "Lily Johnson",
+      "specialty": "Data Science"
+    },
+    {
+      "name": "Grayson Davis",
+      "specialty": "Product Management"
+    }
+  ]
+}
